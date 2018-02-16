@@ -1,2 +1,2 @@
-# adafilter
-AdaFilter -- Signal Recovery by Adaptive Filtering
+# adafilter 
+# AdaFilter -- Signal Recovery via Adaptive Filtering
