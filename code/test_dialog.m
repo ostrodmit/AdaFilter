@@ -1,0 +1,11 @@
+test_input.snr = input('SNR (vector) :');
+test_input.n = input('number of samples :');
+test_input.w = input('filter bandwidth :');
+test_input.sce = input('scenario : RandomSines[RanSin]/CoherentSines[CohSin]/Speech[Speech]/OtherSignals[1-8] :');
+test_input.alg = input('Solvers (cell array of strings: mp,nes,sub) :');
+test_input.l2 = input('l2-prox : no[0]/yes[1]/both[2] :');
+test_input.rho = input('rho (filter norm) :');
+test_input.p = input('p=inf[inf]/p=2[2] :');
+test_input.ada = input('adaptive stepsize: no[0]/yes[1] :');
+test_input.iters = input('how many iters :');
+test_scenario(test_input);
