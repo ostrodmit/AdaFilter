@@ -1,6 +1,6 @@
 # AdaFilter — Signal Denoising via Adaptive Filtering
 
-AdaFilter provides a MATLAB implementation of struture-adaptive denoising of discrete-time signals and images.
+AdaFilter provides a **MATLAB** implementation of struture-adaptive denoising of discrete-time signals and images.
 
 ## Short description
 
@@ -16,13 +16,17 @@ Download or clone the repository, then change to the code directory:
 ```
 >> cd adafilter-master/code
 ``` 
-The codes are run in MATLAB.
 
-## Usage
+## Usage and Documentation
+The user interface is implemented in file ``filter_recovery.m``. In **MATLAB** command line,
 
+and the documentation is available 
+
+## Features
+Currently (Feb. 2018), the following features are implemented:
 
 ## Demos
-We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. In MATLAB command line, type:
+We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. In **MATLAB** command line, type:
 ```
 >> demo1d       % Run a demonstration of 1D-denoising
 >> demo2d       % Run a demonstration of 2D-denoising
