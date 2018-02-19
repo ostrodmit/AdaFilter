@@ -38,7 +38,7 @@ The documentation of both functions is available via the ``doc`` command. In **M
 ```
 where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following conventions are used: 
 - The obligatory parameters are marked by ``*``.
-- A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. f it is replaced with ``*``, a description in words follows later.
+- A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. If it is replaced with ``*``, a description in words follows later.
 
 ## Demos
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D (``demo1d.m``) and 2D (``demo2d.m``). E.g. for the 1D demo, run
