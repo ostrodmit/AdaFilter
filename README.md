@@ -11,13 +11,13 @@ The resulting estimator is shown to be adaptive to the unknown shift-invariant s
 
 All the details regarding the theoretical motivation, statistical performance, and algorithmic implementation of the outlined approach can be found in [1,2,3]. We also plan to release the code reproducing the experimental results of those papers.
 
-## Installation
-Download the 
-```
->> cd catalyst_v1/code      % Change to the code directory
->> mexAll                   % Compile mex files
->> example                  % Run Catalyst/QNing SVRG to minimize logistic regression 
-```
+## Installation and Demos
+Download or clone the repo, then run ``>> cd code``in the terminal in order to change to the code directory.
+
+>> demo1d       % Run a demonstration of 1D-denoising
+>> demo2d       % Run a demonstration of 2D-denoising
+
+## Usage
 
 ## Documentation
 
