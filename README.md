@@ -13,7 +13,9 @@ All the details regarding the theoretical motivation, statistical performance, a
 
 ## Installation
 Download or clone the repository, then change to the code directory: 
-```>> cd adafilter-master/code``` 
+```
+>> cd adafilter-master/code
+``` 
 The codes are run in MATLAB.
 
 ## Usage
