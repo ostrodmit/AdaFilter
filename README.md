@@ -35,7 +35,7 @@ The documentation of both functions is available from inside these functions via
 ```
 where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following conventions are used: 
   - the obligatory parameters are marked by ``*``;
-  - a parameter is sometimes succeeded by ``[<Range>,<Default>]`` where ``<Range>``describes the possible values, and ``<Default>`` is the value assigned by default, if the corresponding field of a structure is empty.
+  - a parameter is sometimes succeeded by ``[<Range>,<Default>]`` where ``<Range>``describes the possible values, and ``<Default>`` is the value assigned by default, if the corresponding field of a structure is empty; it is replaced with ``*`` if described later in the text.
 
 ## Features
 As of Feb. 2018, the following features are implemented:
