@@ -27,7 +27,8 @@ The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``
   - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
 The output is an estimate of the input signal. 
 
-- ``fit_filter`` contains the implementation of a filter-fitting procedure — a specialized first-order solver used to solve a convex program. *This function must only be accessed if fine-tuning of the approach is required.*
+- ``fit_filter`` contains the implementation of a filter-fitting procedure — a specialized first-order solver used to compute the filter.
+*This function must only be accessed if fine-tuning of the approach is required.*
 It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces y2 using y1. Another input parameter is a structure ``control``, corresponding to ``solver_control`` in ``filter_recovery``, in which the parameters of the procedure are specified, see the built-in documentation for the details.
 
 ## Documentation
