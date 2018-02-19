@@ -21,7 +21,7 @@ Download or clone the repository, then change to the code directory:
 ## Usage
 The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous .m-files.
 
-- ``filter_recovery`` is a high-level interface for denoising. It accepts three input parameters: 
+- ``filter_recovery`` provides a high-level interface for denoising. It accepts three input parameters: 
   - 1D or 2D array of observations ``y``, a noisy version of the signal ``x``
   - structure ``params`` with denoising parameters; 
   - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
