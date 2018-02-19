@@ -7,7 +7,7 @@ AdaFilter is a **MATLAB** package which implements **struture-adaptive denoising
 The approach is to fit from the observations a time-invariant filter which *reproduces the vector of observations with a small error, and at the same time has small norm in the DFT domain.* This is done by solving a certain convex optimization problem, see [3].
 Such estimators are adaptive to the unknown shift-invariant structure of the signal. Thus, the following cases are addressed:
 
-- signals belonging to low-dimensional shift-invariant linear subspaces; equivalently, discretized solutions of low-order ODEs and PDEs, and in particular, sums of complex sinusoids;
+- signal belonging to a low-dimensional shift-invariant linear subspace which can be unknown; equivalently, discretized solutions of low-order ODEs and PDEs, and in particular, sums of complex sinusoids with unknown frequencies;
 - more generally, signals that are well-approximated in such subspaces; this includes the classical case of discretized smooth functions.
 
 All the details regarding the theoretical motivation, statistical performance, and algorithmic implementation of the outlined approach can be found in [1,2,3]. We also plan to release the code reproducing the experimental results of those papers.
