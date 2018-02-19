@@ -1,6 +1,6 @@
-# AdaFilter — Adaptive Signal Recovery via Non-Linear Filtering
+# AdaFilter — Signal Recovery via Adaptive Filtering
 
-AdaFilter provides a MATLAB implementation of struture-adaptive signal and image denoising.
+AdaFilter provides a MATLAB implementation of struture-adaptive signal and image recovery. Currently only denoising is implemented; we also plan to add deconvolution in the future.
 
 ## Short description
 
@@ -14,8 +14,8 @@ All the details regarding the theoretical motivation, statistical performance, a
 
 ## Documentation
 
-## References
+### References
 
-[1] Ref1
-[2] Ref2
+[1] Adaptive recovery of signals by convex optimization. Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
+[2] Structure-blind signal recovery.
 [3] Ref3
