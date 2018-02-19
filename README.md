@@ -11,8 +11,13 @@ The resulting estimator is shown to be adaptive to the unknown shift-invariant s
 
 All the details regarding the theoretical motivation, statistical performance, and algorithmic implementation of the outlined approach can be found in [1,2,3]. We also plan to release the code reproducing the experimental results of those papers.
 
+## Usage
+
 ### Installation
 Download or clone the repository, then simply change to the code directory. The codes are run in MATLAB.
+
+### Usage
+
 
 ### Demos
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. In MATLAB command line, type:
@@ -23,10 +28,8 @@ We provide "numerical tours" to demonstrate application of our approach to diffe
 Note that in order for the images to be saved as .pdf files, MATLAB must be launched with administrative rights. 
 In this case, one can also publish both scripts as .pdf or .html documents. For that, go to **Publish** tab in the main menu of the Matlab GUI, and then press **Publish**. The options can be edited in the dropdown menu.
 
-## Usage
-The main 
-
 ## Documentation
+
 
 ### References
 
