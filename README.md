@@ -45,7 +45,7 @@ We provide "numerical tours" to demonstrate application of our approach to diffe
 ```
 publish('demo1d.m',<format>)
 ```
-where ``<format>`` is the format in which the manual file will be generated; good choices are ``'.html'`` and ``'.pdf'``.
+where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``).
 
 ## Features
 As of Feb. 2018, the following features are implemented:
