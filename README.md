@@ -29,8 +29,7 @@ The output is an estimate of the input signal.
 
 - ``fit_filter`` contains the implementation of a filter-fitting procedure — a specialized first-order solver used to compute the filter.
 *This function must only be accessed if fine-tuning of the approach is required.*
-It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces y2 using y1. Another input parameter is a structure ``control``, corresponding to ``solver_control`` in ``filter_recovery``, in which the parameters of the procedure are specified. 
-See the built-in documentation for the details.
+It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces y2 using y1. Another input parameter is structure ``control`` in which the parameters of the procedure are specified — see the built-in documentation for the details.
 
 ## Documentation
 The documentation of both functions is available from inside these functions via the ``doc`` command. In **MATLAB**, run
