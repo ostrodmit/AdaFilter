@@ -5,7 +5,8 @@ AdaFilter provides a **MATLAB** implementation of struture-adaptive denoising of
 ## Short description
 
 The approach is to fit from the observations a time-invariant filter which *reproduces the vector of observations with a small error, and at the same time has small norm in the DFT domain.* This is done by solving a convex optimization problem (namely a well-structured SOCP).
-The resulting estimator is shown to be adaptive to the unknown shift-invariant structure of the signal. Thus, the following signals are addressed:
+The resulting estimator is shown to be adaptive to the unknown shift-invariant structure of the signal. Thus, the following situations are encompassed:
+
 - signals belonging to low-dimensional shift-invariant linear subspaces; equivalently, discretized solutions of low-order ODEs and PDEs, and in particular, sums of complex sinusoids;
 - more generally, signals that are well-approximated in such subspaces; this includes the classical case of discretized smooth functions.
 
@@ -20,28 +21,24 @@ Download or clone the repository, then change to the code directory:
 ## Usage and Documentation
 The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous .m-files.
 
-- ``filter_recovery`` provides a high-level interface for denosing. It accepts three parameters: 
-.- 1D or 2D array of observations ``y``; 
-.- structure ``params`` with denoising parameters; 
-.- optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
+- ``filter_recovery`` is a high-level interface for denoising. It accepts three parameters: 
+  - 1D or 2D array of observations ``y``; 
+  - structure ``params`` with denoising parameters; 
+  - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
 
 - ``fit_filter`` 
+
+The documentation of both functions is available from inside these functions via the ``doc`` command.
 
 ## Features
 As of Feb. 2018, the following features are implemented:
 
 ## Demos
-We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. In **MATLAB** command line, type:
-```
->> demo1d       % Run a demonstration of 1D-denoising
->> demo2d       % Run a demonstration of 2D-denoising
-```
-In order for the images to be saved as .pdf files, MATLAB must be able to write into the parent folder of ``code``
-
-One can also publish both scripts as .pdf or .html documents. For that, go to **Publish** tab in the main menu of the Matlab GUI, and then press **Publish**. The options can be edited in the dropdown menu.
-
-## Documentation
-
+We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. Follow these steps:
+1. Run **MATLAB** GUI with administrative rights. 
+2. Open ``demo1d.m`` or ``demo2d.m``.
+3. Go to **Publish** tab in the main menu, and press **Publish**. The options can be edited in the dropdown menu.
+MATLAB will generate an .html-file, and automatically open it in the default browser.
 
 ## References
 1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
