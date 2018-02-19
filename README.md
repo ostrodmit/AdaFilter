@@ -11,15 +11,13 @@ The resulting estimator is shown to be adaptive to the unknown shift-invariant s
 
 All the details regarding the theoretical motivation, statistical performance, and algorithmic implementation of the outlined approach can be found in [1,2,3]. We also plan to release the code reproducing the experimental results of those papers.
 
-## Usage
-
-### Installation
+## Installation
 Download or clone the repository, then simply change to the code directory. The codes are run in MATLAB.
 
-### Usage
+## Usage
 
 
-### Demos
+## Demos
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. In MATLAB command line, type:
 ```
 >> demo1d       % Run a demonstration of 1D-denoising
@@ -31,8 +29,7 @@ In this case, one can also publish both scripts as .pdf or .html documents. For 
 ## Documentation
 
 
-### References
-
+## References
 1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
 2. [Structure-Blind Signal Recovery](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski
 3. [Efficient First-Order Algorithms for Adaptive Signal Denoising](add a link) D. Ostrovskii, Z. Harchaoui
