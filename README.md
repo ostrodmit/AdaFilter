@@ -29,16 +29,20 @@ The output is an estimate of the input signal.
 
 - ``fit_filter`` 
 
-The documentation of both functions is available from inside these functions via the ``doc`` command: run
+The documentation of both functions is available from inside these functions via the ``doc`` command: in MATLAB, run
 ```
 >> doc <function>
 ```
 where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following conventions are used: 
-  - the necessary arguments are marked by ``*``;
-  - the argument is sometimes succeeded by ``[<Range>,<Default>]`` where ``<Range>``describes the possible values, and ``<Default>`` is the value assigned by default, if the corresponding field of a structure is empty.
+  - the obligatory parameters are marked by ``*``;
+  - a parameter is sometimes succeeded by ``[<Range>,<Default>]`` where ``<Range>``describes the possible values, and ``<Default>`` is the value assigned by default, if the corresponding field of a structure is empty.
 
 ## Features
 As of Feb. 2018, the following features are implemented:
+- Lepski-type bandwidth adaptation;
+- pointwise and blockwise filtering mode;
+- parallelized computation via ``parfor``;
+For their description, see the documentation of ``filter_recovery``.
 
 ## Demos
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. Follow these steps:
