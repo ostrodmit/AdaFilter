@@ -18,7 +18,7 @@ Download or clone the repository, then change to the code directory:
 >> cd adafilter-master/code
 ``` 
 
-## Usage and Documentation
+## Usage
 The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous .m-files.
 
 - ``filter_recovery`` is a high-level interface for denoising. It accepts three input parameters: 
@@ -27,11 +27,11 @@ The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``
   - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
 The output is an estimate of the input signal. 
 
-- ``fit_filter`` contains the implementation of a filter-fitting procedure — a specialized first-order solver used to solve a convex program. This function must only be accessed if fine-tuning of the approach is required.
-It accepts as input parameters two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces y2 using y1. Another input parameter is a structure ``control``, corresponding to ``solver_control`` in ``filter_recovery``, in which the parameters of the procedure are specified, see the built-in documentation for the details.
+- ``fit_filter`` contains the implementation of a filter-fitting procedure — a specialized first-order solver used to solve a convex program. *This function must only be accessed if fine-tuning of the approach is required.*
+It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces y2 using y1. Another input parameter is a structure ``control``, corresponding to ``solver_control`` in ``filter_recovery``, in which the parameters of the procedure are specified, see the built-in documentation for the details.
 
-
-The documentation of both functions is available from inside these functions via the ``doc`` command: in MATLAB, run
+## Documentation
+The documentation of both functions is available from inside these functions via the ``doc`` command. In **MATLAB**, run
 ```
 >> doc <function>
 ```
