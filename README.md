@@ -29,7 +29,7 @@ The output is an estimate of the input signal.
 
 - ``fit_filter`` contains implementations of the filter-fitting procedures — specific optimization problems, and first-order solvers for them, see [3].
 *This function must only be accessed if fine-tuning of the approach is required.*
-It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces ``y2`` via the convolution of ``y1`` with the filter. The third arguument is the structure ``control`` with the parameters of a filter-fitting procedure (see the built-in documentation).
+It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces ``y2`` via the convolution of ``y1`` with the filter. The third arguument is the structure ``control`` which contains the parameters of a filter-fitting procedure. Some of these parameters are obligatory when ``fit_filter`` is called directly -- see the built-in documentation.
 
 ## Documentation
 The documentation of both functions is available via the ``doc`` command. In **MATLAB**, run
@@ -41,11 +41,12 @@ where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following con
 - A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. If it is replaced with ``*``, a description in words follows later.
 
 ## Demos
-We provide "numerical tours" to demonstrate application of our approach to different signals in 1D (``demo1d.m``) and 2D (``demo2d.m``). E.g. for the 1D demo, run
+We provide "numerical tours" to demonstrate application of our approach to different signals in 1D (``demo1d.m``) and 2D (``demo2d.m``). 
+Each of them is compiled within a minute. To obtain the 1D demo, run
 ```
 publish('demo1d.m',<format>)
 ```
-where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``).
+where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``). These 
 
 ## Features
 As of Feb. 2018, the following features are implemented:
