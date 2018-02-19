@@ -2,7 +2,7 @@
 
 AdaFilter provides a **MATLAB** implementation of struture-adaptive denoising of discrete-time signals and images.
 
-## Short description
+## Description
 
 The approach is to fit from the observations a time-invariant filter which *reproduces the vector of observations with a small error, and at the same time has small norm in the DFT domain.* This is done by solving a convex optimization problem (namely a well-structured SOCP).
 The resulting estimator is shown to be adaptive to the unknown shift-invariant structure of the signal. Thus, the following situations are encompassed:
