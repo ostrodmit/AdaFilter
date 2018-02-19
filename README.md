@@ -13,11 +13,11 @@ All the details regarding the theoretical motivation, statistical performance, a
 
 ## Installation
 Download the 
-`
+```
 >> cd catalyst_v1/code      % Change to the code directory
 >> mexAll                   % Compile mex files
 >> example                  % Run Catalyst/QNing SVRG to minimize logistic regression 
-`
+```
 
 ## Documentation
 
