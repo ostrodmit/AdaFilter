@@ -29,8 +29,7 @@ The output is an estimate of the input signal.
 
 - ``fit_filter`` contains implementations of the filter-fitting procedures — specific optimization problems, and first-order solvers for them, see [3].
 *This function must only be accessed if fine-tuning of the approach is required.*
-It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces ``y2`` via the convolution of ``y1`` with the filter. The third arguument is the structure ``control`` with the parameters of a filter-fitting procedure.
-See the built-in documentation for the details.
+It accepts two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces ``y2`` via the convolution of ``y1`` with the filter. The third arguument is the structure ``control`` with the parameters of a filter-fitting procedure (see the built-in documentation).
 
 ## Documentation
 The documentation of both functions is available via the ``doc`` command. In **MATLAB**, run
