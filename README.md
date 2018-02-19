@@ -17,8 +17,8 @@ All the details regarding the theoretical motivation, statistical performance, a
 
 ### References
 
-1. [Adaptive Recovery of Signals by Convex Optimization.](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii.
-2. [Structure-Blind Signal Recovery.](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski.
-3. [Efficient First-Order Algorithms for Adaptive Signal Denoising.] D. Ostrovskii, Z. Harchaoui. *Submitted to ICML 2018.*
+1. [Adaptive Recovery of Signals by Convex Optimization.](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, **D. Ostrovskii**.
+2. [Structure-Blind Signal Recovery.](https://arxiv.org/abs/1607.05712) **D. Ostrovskii**, Z. Harchaoui, A. Judistky, A. Nemirovski.
+3. [Efficient First-Order Algorithms for Adaptive Signal Denoising.] **D. Ostrovskii**, Z. Harchaoui. *Submitted to ICML 2018.*
 4. [Atomic Norm Denoising with Applications to Line Spectral Estimation.](https://arxiv.org/abs/1204.0562) B. N. Bhaskar, G. Tang, B. Recht.
 5. [Near Minimax Line Spectral Estimation.](https://arxiv.org/abs/1204.0562) G. Tang, B. N. Bhaskar, B. Recht.
