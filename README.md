@@ -1,6 +1,6 @@
 # AdaFilter — Signal Denoising via Adaptive Filtering
 
-AdaFilter provides a MATLAB implementation of struture-adaptive *signal and image denoising*.
+AdaFilter provides a MATLAB implementation of struture-adaptive 1D and 2D denoising.
 
 ## Short description
 
