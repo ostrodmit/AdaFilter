@@ -49,9 +49,9 @@ We provide "numerical tours" to demonstrate application of our approach to diffe
 1. Run **MATLAB** GUI with administrative rights. 
 2. Open ``demo1d.m`` or ``demo2d.m``.
 3. Go to **Publish** tab in the main menu, and press **Publish**. The options can be edited in the dropdown menu.
-MATLAB will generate an .html-file, and automatically open it in the default browser.
+MATLAB will generate an .html-file, and automatically open it in a web-browser.
 
 ## References
 1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
 2. [Structure-Blind Signal Recovery](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski
-3. [Efficient First-Order Algorithms for Adaptive Signal Denoising](add a link) D. Ostrovskii, Z. Harchaoui
+3. [Efficient First-Order Algorithms for Adaptive Signal Denoising](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui
