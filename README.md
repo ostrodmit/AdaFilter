@@ -41,12 +41,11 @@ where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following con
 - A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. f it is replaced with ``*``, a description in words follows later.
 
 ## Demos
-We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. Follow these steps:
-1. Run **MATLAB** GUI with administrative rights. 
-2. Open ``demo1d.m`` or ``demo2d.m``.
-3. Go to **Publish** tab in the main menu, and press **Publish**. The options can be edited in the dropdown menu.
-
-MATLAB will generate an .html-file, and automatically open it in a web-browser.
+We provide "numerical tours" to demonstrate application of our approach to different signals in 1D (``demo1d.m``) and 2D (``demo2d.m``). E.g. for the 1D demo, run
+```
+publish('demo1d.m',<format>)
+```
+where ``<format>`` is the format in which the manual file will be generated; good choices are ``'.html'`` and ``'.pdf'``.
 
 ## Features
 As of Feb. 2018, the following features are implemented:
