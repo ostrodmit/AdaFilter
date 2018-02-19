@@ -25,10 +25,10 @@ The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``
   - 1D or 2D array of observations ``y`` — a noisy version of the signal ``x``
   - structure ``params`` with denoising parameters; 
   - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
-The output is an estimate of the input signal. To see the documentation and example of usage, run 
-``
+The output is an estimate of the input signal. To see the documentation and example of usage, run (in Matlab):
+```
 >> doc filter_recovery
-``
+```
 
 - ``fit_filter`` 
 
