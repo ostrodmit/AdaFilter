@@ -5,7 +5,7 @@ AdaFilter provides a **MATLAB** implementation of struture-adaptive denoising of
 ## Description
 
 The approach is to fit from the observations a time-invariant filter which *reproduces the vector of observations with a small error, and at the same time has small norm in the DFT domain.* This is done by solving a convex optimization problem (namely a well-structured SOCP).
-The resulting estimator is shown to be adaptive to the unknown shift-invariant structure of the signal. Thus, the following situations are encompassed:
+The resulting estimator is shown to be adaptive to the unknown shift-invariant structure of the signal. Thus, the following cases are addressed:
 
 - signals belonging to low-dimensional shift-invariant linear subspaces; equivalently, discretized solutions of low-order ODEs and PDEs, and in particular, sums of complex sinusoids;
 - more generally, signals that are well-approximated in such subspaces; this includes the classical case of discretized smooth functions.
@@ -21,10 +21,11 @@ Download or clone the repository, then change to the code directory:
 ## Usage and Documentation
 The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous .m-files.
 
-- ``filter_recovery`` is a high-level interface for denoising. It accepts three parameters: 
-  - 1D or 2D array of observations ``y``; 
+- ``filter_recovery`` is a high-level interface for denoising. It accepts three input parameters: 
+  - 1D or 2D array of observations ``y`` — a noisy version of the signal ``x``
   - structure ``params`` with denoising parameters; 
   - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
+The output is an estimate ``x_hat`` of the input signal.
 
 - ``fit_filter`` 
 
