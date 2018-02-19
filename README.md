@@ -22,12 +22,14 @@ Download or clone the repository, then change to the code directory:
 The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous .m-files.
 
 - ``filter_recovery`` is a high-level interface for denoising. It accepts three input parameters: 
-  - 1D or 2D array of observations ``y`` — a noisy version of the signal ``x``
+  - 1D or 2D array of observations ``y``, a noisy version of the signal ``x``
   - structure ``params`` with denoising parameters; 
   - optionally, structure ``solver_control`` with parameters of the filter-fitting procedure which are passed to ``fit_filter``.
 The output is an estimate of the input signal. 
 
-- ``fit_filter`` 
+- ``fit_filter`` contains the implementation of a filter-fitting procedure — a specialized first-order solver used to solve a convex program. This function must only be accessed if fine-tuning of the approach is required.
+It accepts as input parameters two arrays ``y1`` and ``y2``, and computes a one-sided filter which reproduces y2 using y1. Another input parameter is a structure ``control``, corresponding to ``solver_control`` in ``filter_recovery``, in which the parameters of the procedure are specified, see the built-in documentation for the details.
+
 
 The documentation of both functions is available from inside these functions via the ``doc`` command: in MATLAB, run
 ```
@@ -37,19 +39,19 @@ where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following con
   - the obligatory parameters are marked by ``*``;
   - a parameter is sometimes succeeded by ``[<Range>,<Default>]`` where ``<Range>``describes the possible values, and ``<Default>`` is the value assigned by default, if the corresponding field of a structure is empty; it is replaced with ``*`` if described later in the text.
 
-## Features
-As of Feb. 2018, the following features are implemented:
-- Lepski-type bandwidth adaptation;
-- pointwise and blockwise filtering mode;
-- parallelized computation via ``parfor``;
-For their description, see the documentation of ``filter_recovery``.
-
 ## Demos
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D and 2D. Follow these steps:
 1. Run **MATLAB** GUI with administrative rights. 
 2. Open ``demo1d.m`` or ``demo2d.m``.
 3. Go to **Publish** tab in the main menu, and press **Publish**. The options can be edited in the dropdown menu.
 MATLAB will generate an .html-file, and automatically open it in a web-browser.
+
+## Features
+As of Feb. 2018, the following features are implemented:
+- Lepski-type bandwidth adaptation;
+- pointwise and blockwise filtering mode;
+- parallelized computation via ``parfor``;
+For their description, see the documentation of ``filter_recovery``.
 
 ## References
 1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
