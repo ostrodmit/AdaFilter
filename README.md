@@ -49,7 +49,7 @@ Each of them is compiled within a minute. To obtain the 1D demo, run
 ```
 publish('demo1d.m',<format>)
 ```
-where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``). These 
+where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``). 
 
 ## Features
 As of Feb. 2018, the following features are implemented:
