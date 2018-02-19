@@ -54,7 +54,7 @@ As of Feb. 2018, the following features are implemented:
 - pointwise and blockwise filtering mode;
 - parallelized computation via ``parfor``.
 
-For their description, see the documentation of ``filter_recovery``.
+For their description, see the documentation of ``filter_recovery``, and [2].
 
 ## References
 1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
