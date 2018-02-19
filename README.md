@@ -18,4 +18,4 @@ All the details regarding the theoretical motivation, statistical performance, a
 
 1. Adaptive Recovery of Signals by Convex Optimization. Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii.
 2. Structure-Blind Signal Recovery. D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski.
-3. Efficient First-Order Algorithms for Adaptive Signal Denosing. D. Ostrovskii, Z. harchaoui.
+3. Efficient First-Order Algorithms for Adaptive Signal Denosing. D. Ostrovskii, Z. Harchaoui.
