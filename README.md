@@ -15,11 +15,12 @@ All the details regarding the theoretical motivation, statistical performance, a
 Download or clone the repository, then simply change to the code directory. The codes are run in MATLAB.
 
 ### Demos
-We provide a "numerical tour" of 1D and 2D denoising. In MATLAB launched with administative rights, type:
+We provide a "numerical tour" of 1D and 2D denoising. In MATLAB command line, type:
 ```
 >> matlab demo1d       % Run a demonstration of 1D-denoising
 >> matlab demo2d       % Run a demonstration of 2D-denoising
 ```
+Note that in order for the images to be saved as .pdf files, MATLAB must be launched with administrative rights.
 
 ## Usage
 
