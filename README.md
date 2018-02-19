@@ -18,9 +18,11 @@ Download or clone the repository, then change to the code directory:
 ``` 
 
 ## Usage and Documentation
-The user deals with function ``filter_recovery`` implemented in file ``filter_recovery.m``. This function accepts three parameters: 1D or 2D array of observations ``y``, structure ``params`` with denoising parameters, and structure ``solver_control`` with parameters of the filter fitting procedure. 
+The user deals with the two functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous files. 
 
-and the documentation is available at 
+- ``filter_recovery`` provides a high-level interface for denosing. It accepts three parameters: 1D or 2D array of observations ``y``, structure ``params`` with denoising parameters, and structure ``solver_control`` with parameters of the filter-fitting procedure specialized first-order algorithm which fits an adaptive filter.
+
+- ``fit_filter``
 
 ## Features
 As of Feb. 2018, the following features are implemented:
