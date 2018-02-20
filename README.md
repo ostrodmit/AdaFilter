@@ -45,11 +45,13 @@ where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following con
 
 ## Demos
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D (``demo1d.m``) and 2D (``demo2d.m``). 
-Each of them is compiled within a minute. To obtain the 1D demo, run
+Each of them is compiled within 60-90 seconds. To obtain the 1D demo, run
 ```
 publish('demo1d.m',<format>)
 ```
 where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``). 
+
+Note that the demo scripts use functions ``generate_data.m`` and ``generate_data2.m`` to synthesize signals and corrupt them with noise, as well as our own implementation of the Lasso estimator ``recover_lasso.m``. These files have also internal MATLAB documentation.
 
 ## Features
 As of Feb. 2018, the following features are implemented:
