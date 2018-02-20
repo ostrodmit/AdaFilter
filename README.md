@@ -13,12 +13,14 @@ Such estimators are adaptive to the unknown shift-invariant structure of the sig
 All the details regarding the theoretical motivation, statistical performance, and algorithmic implementation of the outlined approach can be found in [1,2,3]. We also plan to release the code reproducing the experimental results of those papers.
 
 ## Installation
+
 Download or clone the repository, then change to the code directory: 
 ```
 >> cd AdaFilter-master/code
 ``` 
 
 ## Usage
+
 The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in the eponymous .m-files.
 
 - ``filter_recovery`` provides a high-level interface for denoising. It accepts three input parameters: 
@@ -35,6 +37,7 @@ It accepts an array ``y1``, a shorter (smaller) array ``y2``, and computes a one
   - structure ``control``which contains the parameters of a filter-fitting procedure. Some of these parameters are obligatory when ``fit_filter`` is called directly -- see the built-in documentation.
 
 ## Documentation
+
 The documentation of both functions is available via the ``doc`` command. In **MATLAB**, run
 ```
 >> doc <function>
@@ -44,6 +47,7 @@ where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following con
 - A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. If it is replaced with ``*``, a description in words follows later.
 
 ## Demos
+
 We provide "numerical tours" to demonstrate application of our approach to different signals in 1D (``demo1d.m``) and 2D (``demo2d.m``). 
 Each of them is compiled within 60-90 seconds. To obtain the 1D demo, run
 ```
@@ -54,6 +58,7 @@ where ``<format>`` is the desired format of the numerical tour (good choices are
 Note that the demo scripts use functions ``generate_data.m`` and ``generate_data2.m`` to synthesize signals and corrupt them with noise, as well as our own implementation of the Lasso estimator ``recover_lasso.m``. These files have also internal MATLAB documentation.
 
 ## Features
+
 As of Feb. 2018, the following features are implemented:
 - Lepski-type bandwidth adaptation;
 - pointwise and blockwise filtering mode;
@@ -62,6 +67,7 @@ As of Feb. 2018, the following features are implemented:
 For their description, see the documentation of ``filter_recovery``.
 
 ## References
+
 1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
 2. [Structure-Blind Signal Recovery](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski
 3. [Paper under review](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui
