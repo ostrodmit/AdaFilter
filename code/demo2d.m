@@ -48,4 +48,4 @@ params.mode=2; % overlapping blocks
 tic; recf = filter_recovery(y,params); toc
 plot_recovery_results2(params,mode,save_pics,x,y,recf,recl);
 %%
-% Indeed it became slightly better!
+% Indeed it looks slightly better, and MSE improved a bit.
