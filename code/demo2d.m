@@ -16,27 +16,34 @@ params.lep=0; % no bandwidth adaptation.
 tic; recf = filter_recovery(y,params); toc
 %%
 % Plot the results (the plot is saved in '../test/rec_test-2d/').
+%
 % isImg=0; % not an image file
-mode = 'mine'; % for generated signals
 % isMesh=0; % don't use mesh
-save_pics=0; % don't save separate figures
 % plot_recovery_results2(params,isImg,isMesh,x,y,recf,recl);
+mode = 'mine'; % for generated signals
+save_pics=0; % don't save separate figures
 plot_recovery_results2(params,mode,save_pics,x,y,recf,recl);
 %% Brodatz
 n = 128;
-[x,y,sigm] = generate_data2('../Brodatz/D75.gif',n,1); % Brodatz file
+[x,y,sigm] = generate_data2('../Brodatz/D75.gif',n,1.5); % Brodatz file
 recl = lasso_recovery(y,sigm);
 clear params
 params.sigm=sigm;
 params.rho=4;
 params.lep=1; % we need bandwidth adaptation, the picture has sharp borders
 params.par=1; % let's go parallel
+params.mode=1; % blockwise recovery
 tic; recf = filter_recovery(y,params); toc
 %%
 % Plot results
+%
 % isImg=1;
 mode = 'img'; % for image files
 % isMesh=0;
 save_pics=0; % don't save separate figures
-% plot_recovery_results2(params,isImg,isMesh,x,y,recf,recl);
+plot_recovery_results2(params,mode,save_pics,x,y,recf,recl);
+%%
+% Now let's try overlapping blocks to improve the visual quality:
+params.mode=2; % overlapping blocks
+tic; recf = filter_recovery(y,params); toc
 plot_recovery_results2(params,mode,save_pics,x,y,recf,recl);
