@@ -16,7 +16,7 @@ All the details regarding the theoretical motivation, statistical performance, a
 
 Download or clone the repository, then change to the code directory: 
 ```
->> cd AdaFilter-master/code
+>> cd AdaFilter/code
 ``` 
 
 ## Usage
