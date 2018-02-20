@@ -15,11 +15,11 @@ All the details regarding the theoretical motivation, statistical performance, a
 ## Installation
 Download or clone the repository, then change to the code directory: 
 ```
->> cd adafilter-master/code
+>> cd AdaFilter-master/code
 ``` 
 
 ## Usage
-The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in eponymous .m-files.
+The user deals with two MATLAB functions, ``filter_recovery`` and ``fit_filter``, implemented in the eponymous .m-files.
 
 - ``filter_recovery`` provides a high-level interface for denoising. It accepts three input parameters: 
   - 1D or 2D array of observations ``y``, a noisy version of the signal ``x``
