@@ -20,9 +20,9 @@ for ifFliplr = 0:(dim-1)
                 control.u0 = initial.u{ifFliplr+1,ifFlipud+1};
             end
             sol = fit_filter(y1,y2,control);
-            if sol.status, 
-                fprintf('Problem unsolved. Status: %d\n', sol.status);
-            end
+%             if sol.status, 
+%                 fprintf('Problem unsolved. Status: %d\n', sol.status);
+%             end
             new_initial.phi{ifFliplr+1,ifFlipud+1} = sol.phi;
             new_initial.u{ifFliplr+1,ifFlipud+1} = sol.u;
             if dim == 1
