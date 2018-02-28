@@ -59,7 +59,7 @@ Note that the demo scripts use functions ``generate_data.m`` and ``generate_data
 
 ## Features
 
-As of Feb. 2018, the following features are implemented:
+As of February 2018, the following features are implemented:
 - Lepski-type bandwidth adaptation;
 - pointwise and blockwise filtering mode;
 - parallelized computation via ``parfor``.
