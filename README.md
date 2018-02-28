@@ -44,7 +44,7 @@ The documentation of both functions is available via the ``doc`` command. In **M
 ```
 where ``<function>`` is ``filter_recovery`` or ``fit_filter``. The following conventions are used: 
 - The obligatory parameters are marked by ``*``.
-- A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. If it is replaced with ``*``, a description in words follows later.
+- A parameter is sometimes succeeded by ``[<Range>,<Default>]``. In this case, ``<Range>``is a symbolic description of the set of *admissible values* of a parameter, and ``<Default>`` specifies the *default value* assigned if the corresponding field of the input structure is empty. If ``<Default>`` is ``*``, a text explanation follows later.
 
 ## Demos
 
@@ -55,7 +55,7 @@ publish('demo1d.m',<format>)
 ```
 where ``<format>`` is the desired format of the numerical tour (good choices are ``'.html'`` and ``'.pdf'``). 
 
-Note that the demo scripts use functions ``generate_data.m`` and ``generate_data2.m`` to synthesize signals and corrupt them with noise, as well as our own implementation of the Lasso estimator ``recover_lasso.m``. These files have also internal MATLAB documentation.
+Note that the demo scripts use functions ``generate_data.m`` and ``generate_data2.m`` to synthesize signals and corrupt them with noise, as well as our own implementation of the Lasso estimator ``recover_lasso.m``. These files have their own documentation.
 
 ## Features
 
