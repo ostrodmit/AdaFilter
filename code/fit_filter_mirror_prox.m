@@ -6,7 +6,7 @@ function sol = fit_filter_mirror_prox(y1,y2,control)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%% Mirror Prox %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     if ~constrained
-        rho = 1; % currently unconstrained algo does not work properly with online = 1, especially with l2_prox = 1 -- probably due to numerical problems
+        rho = 1; % currently algo does not work properly with online = 1, especially with l2_prox = 1 -- probably due to numerical problems
     end
     b = dft(y2);
     L = length(y2)-1;
