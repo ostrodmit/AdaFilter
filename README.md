@@ -68,6 +68,6 @@ For their description, see the documentation of ``filter_recovery``.
 
 ## References
 
-1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii
-2. [Structure-Blind Signal Recovery](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski
-3. [Paper under review](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui
+1. [Adaptive Recovery of Signals by Convex Optimization](https://hal.inria.fr/hal-01250215) Z. Harchaoui, A. Juditsky, A. Nemirovski, D. Ostrovskii. COLT 2015.
+2. [Structure-Blind Signal Recovery](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui, A. Judistky, A. Nemirovski. NIPS 2016.
+3. [Efficient First-Order Algorithms for Adaptive Signal Denoising](https://arxiv.org/abs/1607.05712) D. Ostrovskii, Z. Harchaoui. ICML 2018.
