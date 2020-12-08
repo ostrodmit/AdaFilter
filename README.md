@@ -1,4 +1,4 @@
-# AdaFilter — Adaptive Denoising via Non-Linear Filtering
+# AdaFilter: Adaptive Denoising via Non-Linear Filtering
 
 AdaFilter is a **MATLAB** package which implements **struture-adaptive denoising** of discrete-time signals and images.
 
